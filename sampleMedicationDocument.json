@@ -1,0 +1,113 @@
+{
+    "resourceType": "Bundle",
+    "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:3253c11f-b86e-4d22-881e-d9201837d779"
+    },
+    "type": "document",
+    "timestamp": "2026-02-11T15:36:14.191+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:891d34d5-79d1-49c3-ad4e-178fc916b24e",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "891d34d5-79d1-49c3-ad4e-178fc916b24e",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "56445-0",
+                            "display": "Medication summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:227633cf-6258-4fab-8c09-fd2dd44d5999"
+                },
+                "date": "2026-02-11T15:36:14+00:00",
+                "author": [
+                    {
+                        "reference": "urn:uuid:f9b41dc8-186a-4f5c-ac94-3c975258d468"
+                    }
+                ],
+                "title": "Medication Document",
+                "custodian": {
+                    "reference": "urn:uuid:f9b41dc8-186a-4f5c-ac94-3c975258d468"
+                },
+                "section": [
+                    {
+                        "title": "Medications",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "History of Medication use"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:fbe6b61a-5194-4ee5-83e0-37b053e315f8"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:227633cf-6258-4fab-8c09-fd2dd44d5999",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "227633cf-6258-4fab-8c09-fd2dd44d5999",
+                "name": [
+                    {
+                        "family": "Mustermann",
+                        "given": [
+                            "Max"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f9b41dc8-186a-4f5c-ac94-3c975258d468",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "f9b41dc8-186a-4f5c-ac94-3c975258d468",
+                "name": "Praxis Musterarzt"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:e2c2d8af-3c80-4e76-96bb-4e619cf5e627",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "e2c2d8af-3c80-4e76-96bb-4e619cf5e627",
+                "code": {
+                    "text": "Ibuprofen 400mg"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:fbe6b61a-5194-4ee5-83e0-37b053e315f8",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "fbe6b61a-5194-4ee5-83e0-37b053e315f8",
+                "status": "active",
+                "medicationReference": {
+                    "reference": "urn:uuid:e2c2d8af-3c80-4e76-96bb-4e619cf5e627"
+                },
+                "subject": {
+                    "reference": "urn:uuid:227633cf-6258-4fab-8c09-fd2dd44d5999"
+                },
+                "dateAsserted": "2026-02-11T15:36:14+00:00",
+                "dosage": [
+                    {
+                        "text": "1-0-1"
+                    }
+                ]
+            }
+        }
+    ]
+}

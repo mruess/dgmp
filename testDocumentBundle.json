@@ -1,0 +1,40 @@
+{
+    "resourceType": "Bundle",
+    "type": "document",
+    "timestamp": "2026-02-11T14:36:29.631+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:10023831-6f08-4d63-b9ea-bffe338085ae",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "10023831-6f08-4d63-b9ea-bffe338085ae",
+                "status": "final",
+                "subject": {
+                    "reference": "urn:uuid:0341e3aa-12b1-4744-a0c2-f2ca7c252723"
+                },
+                "date": "2026-02-11T14:36:29+00:00",
+                "title": "Simple Document",
+                "section": [
+                    {
+                        "title": "General Information"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0341e3aa-12b1-4744-a0c2-f2ca7c252723",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "0341e3aa-12b1-4744-a0c2-f2ca7c252723",
+                "name": [
+                    {
+                        "family": "Mustermann",
+                        "given": [
+                            "Max"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

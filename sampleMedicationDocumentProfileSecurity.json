@@ -1,0 +1,137 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": [
+            "https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-bundle"
+        ],
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N",
+                "display": "normal"
+            }
+        ]
+    },
+    "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:17f7f550-5713-4003-bfc6-63776f9ccd40"
+    },
+    "type": "document",
+    "timestamp": "2026-02-11T15:51:58.757+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:3d7b37c1-aeaa-4c42-bbea-876ca5d83fc9",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "3d7b37c1-aeaa-4c42-bbea-876ca5d83fc9",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "56445-0",
+                            "display": "Medication summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:22a48328-9ba0-40bd-8411-d2794872b025"
+                },
+                "date": "2026-02-11T15:51:58+00:00",
+                "author": [
+                    {
+                        "reference": "urn:uuid:227ac45b-81fe-430f-9511-324eb8a7855d"
+                    }
+                ],
+                "title": "Medication Document",
+                "custodian": {
+                    "reference": "urn:uuid:227ac45b-81fe-430f-9511-324eb8a7855d"
+                },
+                "section": [
+                    {
+                        "title": "Medications",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "History of Medication use"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:fd06daba-d7dd-4004-af7e-cc033a97ef49"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:22a48328-9ba0-40bd-8411-d2794872b025",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "22a48328-9ba0-40bd-8411-d2794872b025",
+                "name": [
+                    {
+                        "family": "Mustermann",
+                        "given": [
+                            "Max"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:227ac45b-81fe-430f-9511-324eb8a7855d",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "227ac45b-81fe-430f-9511-324eb8a7855d",
+                "name": "Praxis Musterarzt"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f2cb2165-40be-4ccd-9fed-aa89f25b8540",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "f2cb2165-40be-4ccd-9fed-aa89f25b8540",
+                "code": {
+                    "text": "Ibuprofen 400mg"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:fd06daba-d7dd-4004-af7e-cc033a97ef49",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "fd06daba-d7dd-4004-af7e-cc033a97ef49",
+                "meta": {
+                    "profile": [
+                        "https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-statement"
+                    ],
+                    "security": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                            "code": "N",
+                            "display": "normal"
+                        }
+                    ]
+                },
+                "status": "active",
+                "medicationReference": {
+                    "reference": "urn:uuid:f2cb2165-40be-4ccd-9fed-aa89f25b8540"
+                },
+                "subject": {
+                    "reference": "urn:uuid:22a48328-9ba0-40bd-8411-d2794872b025"
+                },
+                "dateAsserted": "2026-02-11T15:51:58+00:00",
+                "dosage": [
+                    {
+                        "text": "1-0-1"
+                    }
+                ]
+            }
+        }
+    ]
+}

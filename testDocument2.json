@@ -1,0 +1,98 @@
+{
+    "resourceType": "Bundle",
+    "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:b60df7cd-1723-4a23-9dcd-18a0a8a356d1"
+    },
+    "type": "document",
+    "timestamp": "2026-02-11T14:48:02.003+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:24646607-5eb4-481c-aad4-2accb46bc16f",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "24646607-5eb4-481c-aad4-2accb46bc16f",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34133-9",
+                            "display": "Summarization of Episode Note"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:6679ebc0-4f52-4706-81a4-41028e115cf8"
+                },
+                "date": "2026-02-11T14:48:02+00:00",
+                "author": [
+                    {
+                        "reference": "urn:uuid:4185bae1-433a-4d50-884b-9c84ccc586c6"
+                    }
+                ],
+                "title": "Simple Clinical Document",
+                "custodian": {
+                    "reference": "urn:uuid:4185bae1-433a-4d50-884b-9c84ccc586c6"
+                },
+                "section": [
+                    {
+                        "title": "Observations",
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:aab8215b-54fa-450a-ba3b-4525a155e172"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6679ebc0-4f52-4706-81a4-41028e115cf8",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6679ebc0-4f52-4706-81a4-41028e115cf8",
+                "name": [
+                    {
+                        "family": "Mustermann",
+                        "given": [
+                            "Max"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4185bae1-433a-4d50-884b-9c84ccc586c6",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "4185bae1-433a-4d50-884b-9c84ccc586c6",
+                "name": "Praxis Musterarzt"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:aab8215b-54fa-450a-ba3b-4525a155e172",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "aab8215b-54fa-450a-ba3b-4525a155e172",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:6679ebc0-4f52-4706-81a4-41028e115cf8"
+                },
+                "valueQuantity": {
+                    "value": 36.6,
+                    "unit": "°C"
+                }
+            }
+        }
+    ]
+}

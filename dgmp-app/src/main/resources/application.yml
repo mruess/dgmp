@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: dgmp-epa-medication
+
+logging:
+  level:
+    root: INFO
+    com.company: DEBUG
+    ca.uhn.fhir: INFO
+    org.hl7.fhir: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+
+# HAPI FHIR configuration
+hapi:
+  fhir:
+    validation:
+      # Enable detailed validation output
+      enabled: true
+      # Validation strictness
+      strict: false

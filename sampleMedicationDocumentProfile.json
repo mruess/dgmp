@@ -1,0 +1,123 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": [
+            "https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-bundle"
+        ]
+    },
+    "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:9e518825-98c9-4417-9968-fe0cb4576b83"
+    },
+    "type": "document",
+    "timestamp": "2026-02-11T15:46:27.756+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:9d58ccec-8bbf-4c14-8b98-04c74e4fe6d1",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "9d58ccec-8bbf-4c14-8b98-04c74e4fe6d1",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "56445-0",
+                            "display": "Medication summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:d16167eb-d917-4923-8eed-55a6ffa6757e"
+                },
+                "date": "2026-02-11T15:46:27+00:00",
+                "author": [
+                    {
+                        "reference": "urn:uuid:0978a504-8200-4315-9ff7-fffdcb76f507"
+                    }
+                ],
+                "title": "Medication Document",
+                "custodian": {
+                    "reference": "urn:uuid:0978a504-8200-4315-9ff7-fffdcb76f507"
+                },
+                "section": [
+                    {
+                        "title": "Medications",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "History of Medication use"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:9d6f8725-703e-42a7-a5d5-a05956f110ea"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d16167eb-d917-4923-8eed-55a6ffa6757e",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "d16167eb-d917-4923-8eed-55a6ffa6757e",
+                "name": [
+                    {
+                        "family": "Mustermann",
+                        "given": [
+                            "Max"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0978a504-8200-4315-9ff7-fffdcb76f507",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "0978a504-8200-4315-9ff7-fffdcb76f507",
+                "name": "Praxis Musterarzt"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:29070775-81ff-46c5-8dd3-a10547428d26",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "29070775-81ff-46c5-8dd3-a10547428d26",
+                "code": {
+                    "text": "Ibuprofen 400mg"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:9d6f8725-703e-42a7-a5d5-a05956f110ea",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "9d6f8725-703e-42a7-a5d5-a05956f110ea",
+                "meta": {
+                    "profile": [
+                        "https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication-statement"
+                    ]
+                },
+                "status": "active",
+                "medicationReference": {
+                    "reference": "urn:uuid:29070775-81ff-46c5-8dd3-a10547428d26"
+                },
+                "subject": {
+                    "reference": "urn:uuid:d16167eb-d917-4923-8eed-55a6ffa6757e"
+                },
+                "dateAsserted": "2026-02-11T15:46:27+00:00",
+                "dosage": [
+                    {
+                        "text": "1-0-1"
+                    }
+                ]
+            }
+        }
+    ]
+}
